@@ -34,7 +34,10 @@ defmodule EnrutamientoWeb do
         namespace: EnrutamientoWeb
 
       # Import convenience functions from controllers
-      import Phoenix.Controller, only: [get_flash: 1, get_flash: 2, view_module: 1]
+      # importar funciones 
+      #   action_name: 1, controller_module: 1 
+      # de Phoenix.Controller de lib/enrutamiento_web.ex para saber el controlador y accion actual
+      import Phoenix.Controller, only: [get_flash: 1, get_flash: 2, view_module: 1, action_name: 1, controller_module: 1]
 
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML

@@ -17,6 +17,8 @@ defmodule EnrutamientoWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    get "/test", PageController, :test # nueva ruta
+    get "/nosotros", PageController, :nosotros # nueva ruta
   end
 
   # Other scopes may use custom stacks.
