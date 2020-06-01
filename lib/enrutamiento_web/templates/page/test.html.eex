@@ -1,3 +1,5 @@
 <div>
   <h1>Hola que hace</h1>
 </div>
+
+This is the message: <%= message() %>
